@@ -1,0 +1,174 @@
+:root {
+  --green: #2ecc71;
+  --blue: #3498db;
+  --yellow: #f1c40f;
+  --red: #e74c3c;
+  --dark-blue: #34495e;
+  --midnight-blue: #2c3e50;
+  --light-white: #ecf0f1;
+  --silver: #bdc3c7;
+  --darkest-blue: #11191f;
+  
+  --box-size: 900px;
+
+  --bg-color: var(--light-white);
+  --text-color: var(--midnight-blue);
+  --body-color: white;
+  --link-color: var(--blue);
+  --link-color-hover: var(--dark-blue);
+}
+
+:root[data-theme="dark"] {
+  --body-color: var(--darkest-blue);
+  --bg-color: var(--dark-blue);
+  --text-color: var(--light-white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-color);
+  font-family: sans-serif;
+  
+}
+
+header {
+  background-color: var(--body-color);
+  padding: 0;
+  border-bottom: 1px solid var(--dark-blue);
+}
+
+.pico-logo {
+  width: 75px;
+  height: 75px;
+}
+
+.github-icon {
+  width: 20px;
+  height: 20px;
+}
+ 
+header > nav {
+  margin: 0;
+  height: 60px;
+}
+
+
+header > nav > ul {
+  float: left;
+  list-style: none;
+  height: 75px;
+}
+
+
+header > nav > ul:first-child > li:last-of-type {
+  padding: 25px;
+  color: var(--light-white);
+}
+
+header > nav > ul:last-of-type {
+  float: right;
+  padding: 25px;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+header > nav > ul > li{
+  float: left;
+  font-size: 24px;
+  padding-right: 15px;
+  font-size: 20px;
+}
+
+header > nav > ul > li > a {
+  text-decoration: none;
+  color: #596b78;
+  font-size: 20px;
+}
+
+header > nav > ul > li > a:hover {
+  color: hsl(205, 15%, 51%);
+}
+
+main {
+  width: var(--box-size);
+  background-color: var(--body-color);
+  padding: 30px;
+  margin: 100px auto 50px;
+  border: 1px solid hsl(206, 29%, 19%);
+  border-radius: 10px;
+}
+
+aside, section {
+  float: left;
+}
+
+aside {
+  width: 30%;
+}
+
+aside > ul {
+  list-style: none;
+}
+
+aside > ul > li > a {
+  text-decoration: none;
+  padding: 6px 10px;
+  margin: 0 20px;
+  color: var(--text-color);
+  display: block;
+  border-radius: 12px;
+}
+
+aside > ul > li > a:hover {
+  background-color: hsl(206, 29%, 19%);
+}
+
+aside > ul > li {
+  margin-bottom: 10px;
+}
+
+section {
+  width: 70%;
+}
+
+article, 
+article > header {
+  background-color: hsl(206, 29%, 19%);
+}
+
+article {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  color: var(--text-color);
+}
+
+article > header {
+  padding: 0;
+  border-bottom: none;
+  margin-bottom: 10px;
+}
+
+article > footer {
+  padding: 10px 0;
+}
+
+article > footer > a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+article > img {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid hsl(206, 29%, 29%);
+  background-color: #11191f;
+  border-radius: 10px;
+}
